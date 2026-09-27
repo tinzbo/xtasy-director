@@ -37,5 +37,13 @@
     "typescript": "^5.9.2",
     "vite": "^7.1.7",
     "esbuild": "^0.25.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tinzbo/xtasy-director.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tinzbo/xtasy-director/issues"
   }
 }

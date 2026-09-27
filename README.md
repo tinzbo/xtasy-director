@@ -110,3 +110,9 @@ public/media/     内置演示素材（见 docs/media-provenance.md）
 `npm test` 包含：时长守恒、模板差异、SRT 时间轴、SVG 转义、非法输入、项目持久化、版本冲突、跨站请求拒绝、图片上传、外部素材拒绝，以及 FFmpeg 实际 MP4 / ZIP 输出。测试使用独立临时目录与端口，不调用付费 Jev。GitHub Actions 安装 FFmpeg 与中文字体后执行测试和生产构建。
 
 参考：[TypeSafe JavaScript SDK](https://docs.typesafe.ai/sdk/javascript)、[Choice](https://docs.typesafe.ai/primitives/choice)。
+
+## 开源许可
+
+本项目自行编写的代码与文档采用 [MIT License](LICENSE)。第三方依赖保留各自许可证；示例素材来源见 [媒体说明](docs/media-provenance.md)。`package.json` 中的 `private: true` 用于防止误发布到 npm，不影响 GitHub 公开开源。
+
+编译包位于 [GitHub Releases](https://github.com/tinzbo/xtasy-director/releases)，包含源码、素材、`dist/` 和 `dist-server/`。解压后执行 `npm ci --omit=dev`、`npm start`；配置说明及运行条件见上文。
